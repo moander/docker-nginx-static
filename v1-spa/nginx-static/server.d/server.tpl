@@ -1,4 +1,4 @@
-listen       ${PORT};
+listen       ${PORT} ${NGINX_LISTEN_OPTS};
 server_name  localhost;
 
 root   /usr/share/nginx/html;
