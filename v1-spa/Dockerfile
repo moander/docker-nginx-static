@@ -1,4 +1,5 @@
-FROM nginx:alpine
+# syntax=docker/dockerfile:1
+FROM nginx:1.20-alpine
 
 ADD nginx-static /nginx-static
 
