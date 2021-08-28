@@ -18,6 +18,5 @@ location ${API_ROUTER_PROXY_PATH}/ {
 
   proxy_pass ${API_ROUTER_URL}/;
 
-  proxy_redirect default;
-  proxy_redirect / ${API_ROUTER_PROXY_PATH}/;
+  proxy_redirect / $http_origin${API_ROUTER_PROXY_PATH}/;
 }
